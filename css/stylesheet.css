@@ -1,15 +1,16 @@
 *{
     box-sizing: border-box;
 }
+
 html, body{
     margin:0;
     padding:0;
-    font-family:'Times New Roman';
     height:100%;
     position:relative;
     background-color:white;
     font-family: 'Encode Sans Condensed', sans-serif;
 }
+
 .wrapper {
     position: relative;
     padding-bottom: 160px;
@@ -17,34 +18,41 @@ html, body{
     overflow: hidden;
     display: block;
 }
+
 .container-top{
     width:100%;
     background-color: slategrey;
     height:80px;
     position:fixed;
 }
+
 nav{
     float:center;
     font-size: 20px;
     padding-top: 50px;
     padding-right: 15px;
 }
+
 nav a {
     padding: 7px;
     padding-bottom: 5px;
     padding-top: 5px;
 }
+
 a{
     color: black;
     text-decoration:none;
 }
+
 nav a:hover{
     color:black;
     border-top:black 2px solid;
 }
+
 .nav-current{
     border-bottom:black 2px solid;
 }
+
 main{
     padding-bottom: 50px;
     padding-top:10px;
@@ -63,9 +71,11 @@ main h1{
     margin-top;
     height:320;
 }
+
 .container-main-text{
     text-align: justify;
 }
+
 footer{
     background-color: slategrey;
     width: 100%;
@@ -76,11 +86,13 @@ footer{
     bottom:0;
     text-align:center;
 }
+
 .copyright{
     padding-top: 0px;
     padding-bottom: 20px;
     margin-top: 10px;
 }
+
 .logo{
     height:100px;
     width:100px;
@@ -89,11 +101,13 @@ footer{
     float:left;
     background-image: url("../images/logo.png");
 }
+
 .container-top{
     position:static;
     text-align: right;
     height: 90px;
 }
+
 .column, .column-h{
     float: left;
     width:50%;
@@ -101,50 +115,45 @@ footer{
     padding-top:0px;
     text-align:center;
 }
-.column img {
+
+.column,  {
     width: 240px;
     height: 150px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .column p {
     text-align: justify;
     margin-top: 0;
     margin-bottom: 10px;
 }
-.column-h img {
+
+.column-h img{
     width: 600px auto;
     height: 330px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .column-h p {
     text-align: justify;
     margin-top: 0;
     margin-bottom: 10px;
 }
+
 .skill{
     float:left;
     width:25%;
     margin-top:15px;
     height:280px;
-    padding-left:10px;
 }
+
 .skill-img{
     width: 100px;
     height:100px;
 }
-.skill p {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.hobbies{
-    text-align:left;
-}
-.hobbies-list {
-    text-align: left;
-    margin-bottom: 40px;
-}
+
 .social{
     float:left;
     width:25%;
@@ -152,16 +161,26 @@ footer{
     height:280px;
     padding-left:10px;
 }
+
 .social-img{
     width: 100px;
     height:100px;
 }
+
 .social p {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .social-mail{
     text-align:center;
+}
+
+.container-skill {
+    width: 70%;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align: center;
 }
 
 @media print {
@@ -183,7 +202,7 @@ footer{
         font-size: 50px;
     }
 
-    .container-welcome {
+    .container-welcome, .container-social {
         width: 100%;
         font-size: 12px;
     }
@@ -195,14 +214,14 @@ footer{
     .column,.column-h {
         width: 100%;
         font-size: 12px;
-        padding: 0px;
+        padding: 12px;
     }
 
     .column img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 10px;
-        margin-top: 5px;
+        width: 250px auto;
+        height: 120px;
+        margin-bottom: 30px;
+        margin-top: 0px;
     }
     
     .column-h img {
@@ -221,10 +240,12 @@ footer{
         height: 75px;
     }
     
-
-    .skill-item {
+    .skill {
         margin-top: 0px;
-        height: 220px;
+        height: 300px;
+    }
+    .hobbies-print{
+        text-align: left;
     }
 }
 
@@ -273,11 +294,11 @@ footer{
         margin: 0 auto;
     }
 
-    .social {
+    .skill, .social {
         width: 100%;
     }
 
-    .container-welcome {
+    .container-welcome, .container-skill {
         width: 100%;
         padding: 20px;
     }
@@ -287,33 +308,14 @@ footer{
         margin-top: 0;
     }
 
-    p,h2 {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     h1 {
         font-size: 50px;
     }
     
-    .skill{
-        width: 100%;
-        padding-left:30px;
-        margin-left: 50px;
+    .logo{
+        margin-left:0px;
     }
-     .skill p, .social p{
-        
-        text-align:left;
-        margin-right: 50px;
-        padding-right:50px;
-    }
-    .social{
-        width:100%;
-        text-align:justify;
-        padding-left:30px;
-        margin-left: 50px;
-    }
+
 }
 
 @media screen and (max-width: 680px) {
@@ -360,13 +362,47 @@ footer{
         width: 50%;
     }
 
-    .container-welcome {
+    .container-welcome, .container-skill {
         width: 100%;
         padding: 30px;
     }
+    
     .social-mail{
         float:center;
     }
+    
+    .logo{
+        margin-left:0px;
+    }
 
 }
-/*font-family: 'Encode Sans Condensed', sans-serif;*/
+
+@media screen and (max-width: 950px) {
+    .title {
+        display: none;
+    }
+
+    header {
+        width: 94px;
+    }
+
+    .column {
+        width: 100%;
+        padding-right: 40px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .skill {
+        width: 33%;
+    }
+
+    .container-skill, .container-welcome {
+        width: 100%;
+        padding: 40px;
+    }
+    
+    .logo{
+        margin-left:0px;
+    }
+}
